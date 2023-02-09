@@ -47,8 +47,10 @@ section{
 section > p{
     margin-left: 20px;
     padding: 10px;
+    padding-bottom: 40px;
     line-height: 2em;
     font-family: var(--font03);
+    font-size: 1.5em;
 }
 section.normal{
     background-color: white;
@@ -56,11 +58,23 @@ section.normal{
 section.imagem{
     background-color: rgb(100, 100, 100);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.363);
     width: 400px;
 }
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
 footer{
     background-color: black;
     color: white;
