@@ -9,9 +9,16 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th, td{
             border: 1px solid black;
@@ -28,6 +35,14 @@
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            background-color: gray;;
+            top: -1px;
+        }
     </style>
 </head>
 <body>
@@ -41,10 +56,11 @@
         TFOOT
             TR, TD, TH-->
     <table>
+        <caption>População dos estados federativos</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -67,11 +83,21 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total da População</th>
+                <th scope="row">Total da População</th>
                 <td class="num"><strong>210 000 000</strong></td>
             </tr>
         </tfoot>
     </table>
-        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, velit quam inventore facilis eos ipsum sed distinctio consequatur necessitatibus ex fugit provident voluptatem, impedit eveniet atque ad praesentium nobis. Eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium debitis tenetur ad rerum optio repellendus aliquam voluptate ut ea. Velit facere, ipsa praesentium eveniet eligendi excepturi ratione necessitatibus cum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, velit quam inventore facilis eos ipsum sed distinctio consequatur necessitatibus ex fugit provident voluptatem, impedit eveniet atque ad praesentium nobis. Eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium debitis tenetur ad rerum optio repellendus aliquam voluptate ut ea. Velit facere, ipsa praesentium eveniet eligendi excepturi ratione necessitatibus cum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, velit quam inventore facilis eos ipsum sed distinctio consequatur necessitatibus ex fugit provident voluptatem, impedit eveniet atque ad praesentium nobis. Eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium debitis tenetur ad rerum optio repellendus aliquam voluptate ut ea. Velit facere, ipsa praesentium eveniet eligendi excepturi ratione necessitatibus cum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, velit quam inventore facilis eos ipsum sed distinctio consequatur necessitatibus ex fugit provident voluptatem, impedit eveniet atque ad praesentium nobis. Eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium debitis tenetur ad rerum optio repellendus aliquam voluptate ut ea. Velit facere, ipsa praesentium eveniet eligendi excepturi ratione necessitatibus cum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, velit quam inventore facilis eos ipsum sed distinctio consequatur necessitatibus ex fugit provident voluptatem, impedit eveniet atque ad praesentium nobis. Eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium debitis tenetur ad rerum optio repellendus aliquam voluptate ut ea. Velit facere, ipsa praesentium eveniet eligendi excepturi ratione necessitatibus cum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, velit quam inventore facilis eos ipsum sed distinctio consequatur necessitatibus ex fugit provident voluptatem, impedit eveniet atque ad praesentium nobis. Eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium debitis tenetur ad rerum optio repellendus aliquam voluptate ut ea. Velit facere, ipsa praesentium eveniet eligendi excepturi ratione necessitatibus cum?</p>
 </body>
 </html>
